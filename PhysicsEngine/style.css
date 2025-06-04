@@ -1,0 +1,158 @@
+/* OJSN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.main-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.canvas-container {
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+canvas {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.controls {
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.stats-panel {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.stats-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.stat-value {
+    color: #333;
+    font-weight: bold;
+}
+
+.control-panel {
+    margin-bottom: 1rem;
+}
+
+.control-group {
+    margin-bottom: 0.8rem;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #666;
+}
+
+.control-group input {
+    width: 100%;
+    padding: 0.4rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.control-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+button {
+    background: #4CAF50;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.object-list {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 0.8rem;
+}
+
+.object-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+    background: #f8f8f8;
+    border-radius: 4px;
+    margin-bottom: 0.3rem;
+}
+
+.object-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}

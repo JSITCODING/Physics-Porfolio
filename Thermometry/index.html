@@ -1,0 +1,93 @@
+<!-- OJSN -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="../Portfolio/common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <a href="../Portfolio/index.html">← Back to Portfolio</a>
+        </nav>
+
+        <h1>Temperature Converter</h1>
+        <div class="trademark">Created by Otniel Neto™</div>
+        
+        <div class="converter-box">
+            <div class="input-group">
+                <label for="temperature">Enter Temperature:</label>
+                <input type="number" id="temperature" placeholder="Enter value">
+            </div>
+
+            <div class="scale-group">
+                <h3>From:</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="from-scale" value="celsius" checked>
+                        Celsius (°C)
+                    </label>
+                    <label>
+                        <input type="radio" name="from-scale" value="fahrenheit">
+                        Fahrenheit (°F)
+                    </label>
+                    <label>
+                        <input type="radio" name="from-scale" value="kelvin">
+                        Kelvin (K)
+                    </label>
+                </div>
+            </div>
+
+            <div class="scale-group">
+                <h3>To:</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="to-scale" value="celsius">
+                        Celsius (°C)
+                    </label>
+                    <label>
+                        <input type="radio" name="to-scale" value="fahrenheit" checked>
+                        Fahrenheit (°F)
+                    </label>
+                    <label>
+                        <input type="radio" name="to-scale" value="kelvin">
+                        Kelvin (K)
+                    </label>
+                </div>
+            </div>
+
+            <button id="convert-btn">Convert</button>
+
+            <div class="result-group">
+                <h3>Result:</h3>
+                <div id="result" class="result">--</div>
+            </div>
+        </div>
+
+        <div class="custom-scale-box">
+            <h2>Create Custom Scale</h2>
+            <form id="custom-scale-form">
+                <div class="form-group">
+                    <label for="scale-name">Scale Name:</label>
+                    <input type="text" id="scale-name" required placeholder="e.g., MyScale">
+                </div>
+                <div class="form-group">
+                    <label for="freeze-point">Freezing Point:</label>
+                    <input type="number" id="freeze-point" required placeholder="e.g., 0">
+                </div>
+                <div class="form-group">
+                    <label for="boil-point">Boiling Point:</label>
+                    <input type="number" id="boil-point" required placeholder="e.g., 100">
+                </div>
+                <button type="submit">Create Scale</button>
+            </form>
+            <div id="custom-scales-list" class="custom-scales-list"></div>
+        </div>
+        <div class="footer-trademark">© 2024 Otniel Neto™ - All Rights Reserved</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

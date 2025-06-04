@@ -1,0 +1,57 @@
+<!-- OJSN -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Physics Engine</title>
+    <link rel="stylesheet" href="../Portfolio/common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <a href="../Portfolio/index.html">← Back to Portfolio</a>
+        </nav>
+
+        <h1>Simple Physics Engine</h1>
+        <p class="description">A basic 2D physics simulation with gravity and collisions</p>
+        
+        <div class="main-content">
+            <div class="canvas-container">
+                <canvas id="physicsCanvas" width="800" height="600"></canvas>
+                <p class="controls">Click and drag objects to move them</p>
+            </div>
+            
+            <div class="sidebar">
+                <div class="control-panel">
+                    <div class="control-group">
+                        <label for="radiusSlider">Object Radius: <span id="radiusValue">30</span></label>
+                        <input type="range" id="radiusSlider" min="10" max="50" value="30">
+                    </div>
+                    <button id="addObject">Add Object</button>
+                </div>
+
+                <div class="stats-panel">
+                    <h3 class="stats-title">Statistics</h3>
+                    <div class="stat-item">
+                        <span>Total Objects:</span>
+                        <span id="totalObjects" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Total Collisions:</span>
+                        <span id="totalCollisions" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Average Speed:</span>
+                        <span id="avgSpeed" class="stat-value">0</span>
+                    </div>
+                </div>
+
+                <div class="object-list" id="objectsList"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
