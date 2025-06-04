@@ -11,12 +11,12 @@ A 2D physics simulation with gravity and collision detection. Features interacti
 A classic implementation of the Snake game with modern styling and responsive controls.
 
 ### 3. Temperature Converter
-An advanced temperature conversion tool that supports multiple temperature scales and allows creation of custom temperature scales.
+An advanced temperature conversion tool that supports multiple temperature scales and allows creation of custom temperature scales (based on freeze and boil points).
 
 ## Technologies Used
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- JavaScript 
 
 ## Getting Started
 1. Clone the repository
